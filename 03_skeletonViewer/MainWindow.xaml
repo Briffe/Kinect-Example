@@ -1,0 +1,39 @@
+﻿<Window x:Class="skeletonViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Loaded="wndLoad"
+        Closed="wndClose"
+        Title="MainWindow" Height="596" Width="700">
+    <Grid Margin="0,0,-8,4">
+        <Image
+            Name="colorImage" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0"
+            Width="640" Height="480"/>
+        <Canvas 
+            Name="SkeletonCanvas" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+            Width="640" Height="480"  Visibility="Visible">
+            <Ellipse Canvas.Left="0" Canvas.Top="0" Height="10" Name="headPoint" Width="10" Fill="Red"/>
+            <Ellipse Canvas.Left="10" Canvas.Top="0" Height="10" Name="shouldercenterPoint" Width="10" Fill="Blue"/>
+            <Ellipse Canvas.Left="20" Canvas.Top="0" Height="10" Name="shoulderrightPoint" Width="10" Fill="Aqua"/>
+            <Ellipse Canvas.Left="30" Canvas.Top="0" Height="10" Name="shoulderleftPoint" Width="10" Fill="#FFF5E113"/>
+            <Ellipse Canvas.Left="40" Canvas.Top="0" Height="10" Name="elbowrightPoint" Width="10" Fill="#FF23F319"/>
+            <Ellipse Canvas.Left="50" Canvas.Top="0" Height="10" Name="elbowleftPoint" Width="10" Fill="#FFD100FF"/>
+            <Ellipse Canvas.Left="60" Canvas.Top="0" Height="10" Name="wristrightPoint" Width="10" Fill="#FFC36313"/>
+            <Ellipse Canvas.Left="70" Canvas.Top="0" Height="10" Name="wristleftPoint" Width="10" Fill="#FF8BFF00"/>
+            <Ellipse Canvas.Left="80" Canvas.Top="0" Height="10" Name="handrightPoint" Width="10" Fill="#FF126DAC"/>
+            <Ellipse Canvas.Left="90" Canvas.Top="0" Height="10" Name="handleftPoint" Width="10" Fill="#FF4B12E4"/>
+            <Ellipse Canvas.Left="100" Canvas.Top="0" Height="10" Name="spinePoint" Width="10" Fill="#FFCBB492"/>
+            <Ellipse Canvas.Left="110" Canvas.Top="0" Height="10" Name="hipcenterPoint" Width="10" Fill="#FF570B34"/>
+            <Ellipse Canvas.Left="120" Canvas.Top="0" Height="10" Name="hiprightPoint" Width="10" Fill="#FF8181C3"/>
+            <Ellipse Canvas.Left="130" Canvas.Top="0" Height="10" Name="hipleftPoint" Width="10" Fill="#FF943599"/>
+            <Ellipse Canvas.Left="140" Canvas.Top="0" Height="10" Name="kneerightPoint" Width="10" Fill="#FF070A00"/>
+            <Ellipse Canvas.Left="150" Canvas.Top="0" Height="10" Name="kneeleftPoint" Width="10" Fill="#FF0C8D35"/>
+            <Ellipse Canvas.Left="160" Canvas.Top="0" Height="10" Name="anklerightPoint" Width="10" Fill="#FFE2B1A9"/>
+            <Ellipse Canvas.Left="170" Canvas.Top="0" Height="10" Name="ankleleftPoint" Width="10" Fill="#FFCFE680"/>
+            <Ellipse Canvas.Left="180" Canvas.Top="0" Height="10" Name="footrightPoint" Width="10" Fill="#FF2D2D64"/>
+            <Ellipse Canvas.Left="190" Canvas.Top="0" Height="10" Name="footleftPoint" Width="10" Fill="#FF6E610C"/>
+        </Canvas>
+        <Button Content="向上" HorizontalAlignment="Left" Margin="87,500,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="向下" HorizontalAlignment="Left" Margin="250,500,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <TextBlock Name="txtShow" HorizontalAlignment="Left"  Margin="57,540,0,0"  TextWrapping="Wrap"  Text="TextBlock" VerticalAlignment="Top" Width="343"/>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinect_gesture", "kinect_gesture.csproj", "{61E82622-9B16-4A17-87C4-92D69037CC9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61E82622-9B16-4A17-87C4-92D69037CC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E82622-9B16-4A17-87C4-92D69037CC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E82622-9B16-4A17-87C4-92D69037CC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E82622-9B16-4A17-87C4-92D69037CC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
